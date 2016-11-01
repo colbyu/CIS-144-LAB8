@@ -38,7 +38,9 @@ public class Steganography
 		message +=  "\t" + line11 + "\n";
 		JOptionPane.showMessageDialog(null, "Message: " + message,
 		"Plaintext Message", JOptionPane.PLAIN_MESSAGE);
-		
+		int length = message.length();
+                JOptionPane.showMessageDialog(null, "Character count: " + length ,
+		"Count", JOptionPane.PLAIN_MESSAGE);
 		// convert plaintext message to lower case
 		line1 = line1.toLowerCase(); 
 		line2 = line2.toLowerCase(); 
@@ -67,15 +69,18 @@ String plaintext = "\n";
 		
 		JOptionPane.showMessageDialog(null, "Message (lower case): " + plaintext,
 		"Lower Case", JOptionPane.PLAIN_MESSAGE);
+                length = message.length();
+                JOptionPane.showMessageDialog(null, "Character count: " + length ,
+		"Count", JOptionPane.PLAIN_MESSAGE);
 				
 		// define line messages field size with 20 indices
+                //or use for loop
 		int[] num = 
 		{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20};
 		
 		// define the key variable and message object
 		int key = 0;
 		StringBuilder s = new StringBuilder();
-		
 		// build the secret message
 		s.append("\n"); // new line
 		key = num[7]; // t
@@ -128,9 +133,11 @@ String plaintext = "\n";
 		s.append(line6.substring(key, key + 1));
 		
 		s.append("\n"); // new line
-		
+		length = s.length();
 		System.out.println("a steganography secret " + s);
 		JOptionPane.showMessageDialog(null, "Secret Message: " + s,
 		"Decoded", JOptionPane.PLAIN_MESSAGE);
+                JOptionPane.showMessageDialog(null, "Character count: " + length ,
+		"Count", JOptionPane.PLAIN_MESSAGE);
 	}
 }
