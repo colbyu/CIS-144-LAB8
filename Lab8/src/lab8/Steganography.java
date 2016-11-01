@@ -112,29 +112,29 @@ String plaintext = "\n";
 		s.append(line7.substring(key, key + 1));
 		
 		s.append("\n"); // new line
-		key = num[15]; // d 
-		s.append(line6.substring(key, key + 1));
-		key = num[15]; // r
-		s.append(line6.substring(key, key + 1));
-		key = num[15]; // o
-		s.append(line6.substring(key, key + 1));
-		key = num[15]; // n
-		s.append(line6.substring(key, key + 1));
-		key = num[15]; // e
-		s.append(line6.substring(key, key + 1));
+		key = num[13]; // d 
+		s.append(line1.substring(key, key + 1));
+		key = num[17]; // r
+		s.append(line1.substring(key, key + 1));
+		key = num[4]; // o
+		s.append(line1.substring(key, key + 1));
+		key = num[9]; // n
+		s.append(line1.substring(key, key + 1));
+		key = num[1]; // e
+		s.append(line1.substring(key, key + 1));
 		s.append(" ");
-		key = num[15]; // B
-		s.append(line6.substring(key, key + 1));
-		key = num[15]; // E
-		s.append(line6.substring(key, key + 1));
-		key = num[15]; // T
-		s.append(line6.substring(key, key + 1));
-		key = num[15]; // A
-		s.append(line6.substring(key, key + 1));
-		
+		key = num[8]; // B
+		s.append(line4.substring(key, key + 1));
+		key = num[1]; // E
+		s.append(line1.substring(key, key + 1));
+		key = num[7]; // T
+		s.append(line1.substring(key, key + 1));
+		key = num[8]; // A
+		s.append(line1.substring(key, key + 1));
 		s.append("\n"); // new line
+                
 		length = s.length();
-		System.out.println("a steganography secret " + s);
+		System.out.println("A steganography secret " + s);
 		JOptionPane.showMessageDialog(null, "Secret Message: " + s,
 		"Decoded", JOptionPane.PLAIN_MESSAGE);
                 JOptionPane.showMessageDialog(null, "Character count: " + length ,
