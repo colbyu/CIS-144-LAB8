@@ -5,7 +5,7 @@ package lab8;
  * @author colby
  */
 import javax.swing.JOptionPane;
-//Sammy Student, Programmer
+//Colby Underhill, Programmer
 public class Steganography 
 {
 	public static void main(String args[])
@@ -93,7 +93,7 @@ String plaintext = "\n";
 		s.append(line3.substring(key, key + 1));
 		s.append(" "); // space
 		
-key = num[5]; // l
+                key = num[5]; // l
 		s.append(line4.substring(key, key + 1));
 		key = num[12]; // a
 		s.append(line4.substring(key, key + 1));
